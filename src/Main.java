@@ -1,6 +1,6 @@
 public class Main {
 
-    public static void countMinSalary(Employee[] employees) {
+    public static void giveMinSalary(Employee[] employees) {
         if (employees.length > 0) {
             Employee emp = employees[0];
             for (Employee employee : employees) {
@@ -13,7 +13,7 @@ public class Main {
         System.out.println();
     }
 
-    public static void countMaxSalary(Employee[] employees) {
+    public static void giveMaxSalary(Employee[] employees) {
         if (employees.length > 0) {
             Employee emp = employees[0];
             for (Employee employee : employees) {
@@ -76,12 +76,12 @@ public class Main {
 
 
         typeAllWorkers(employee);
-        countMinSalary(employee);
-        countMaxSalary(employee);
+        giveMinSalary(employee);
+        giveMaxSalary(employee);
         countWorkerSalary(employee);
         averageSalary(employee);
         typeAllWorkers10(employee);
 
-        Employee.getCounter();
+        Employee.counter();
     }
 }

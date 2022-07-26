@@ -12,11 +12,11 @@ public class Employee {
         this.worker = worker;
         this.salaryWorker = salaryWorker;
         this.deptNumber = deptNumber;
-        this.id = getCounter();
+        this.id = counter();
         counter++;
     }
 
-    public static int getCounter() {
+    public static int counter() {
         return counter;
     }
 
