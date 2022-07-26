@@ -26,7 +26,7 @@ public class Main {
         System.out.println();
         }
 
-    public static void typeAllWorkers(Employee[] employees) {
+    public static void typeAllWorkersInfo(Employee[] employees) {
         for (Employee employee : employees) {
             System.out.println(employee);
         }
@@ -34,7 +34,7 @@ public class Main {
     }
 
 
-    public static void typeAllWorkers10(Employee[] employees) {
+    public static void type10WorkersInfo(Employee[] employees) {
         for (Employee employee : employees) {
             System.out.println(employee.getWorker());
         }
@@ -42,7 +42,7 @@ public class Main {
     }
 
 
-    public static int countWorkerSalary(Employee[] employees) {
+    public static int countAllWorkersSalary(Employee[] employees) {
         int sum = 0;
         for (Employee employee : employees){
             sum += employee.getSalaryWorker();
@@ -52,8 +52,7 @@ public class Main {
     }
 
     public static void averageSalary(Employee[] employee) {
-        System.out.println();
-        int sum = countWorkerSalary(employee);
+        int sum = countAllWorkersSalary(employee);
         float average = (float) sum / employee.length;
         System.out.println("Средняя зарплата составляет:" + average);
         System.out.println();
@@ -75,12 +74,12 @@ public class Main {
         employee[9] = new Employee("Losev Andrey Timurovich", 81000, 5, 1);
 
 
-        typeAllWorkers(employee);
+        typeAllWorkersInfo(employee);
         giveMinSalary(employee);
         giveMaxSalary(employee);
-        countWorkerSalary(employee);
+        countAllWorkersSalary(employee);
         averageSalary(employee);
-        typeAllWorkers10(employee);
+        type10WorkersInfo(employee);
 
         Employee.counter();
     }
