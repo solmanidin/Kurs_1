@@ -51,7 +51,7 @@ public class Main {
         return sum;
     }
 
-    public static void averageSalary(Employee[] employee) {
+    public static void averageSalaryOfWorkers(Employee[] employee) {
         int sum = countAllWorkersSalary(employee);
         float average = (float) sum / employee.length;
         System.out.println("Средняя зарплата составляет:" + average);
@@ -78,7 +78,7 @@ public class Main {
         giveMinSalary(employee);
         giveMaxSalary(employee);
         countAllWorkersSalary(employee);
-        averageSalary(employee);
+        averageSalaryOfWorkers(employee);
         type10WorkersInfo(employee);
 
         Employee.counter();
