@@ -8,12 +8,16 @@ public class Employee {
     private static int counter;
 
 
-    public Employee(String worker, int salaryWorker, int deptNumber,int id) {
+    public Employee(String worker, int salaryWorker, int deptNumber, int id) {
         this.worker = worker;
         this.salaryWorker = salaryWorker;
         this.deptNumber = deptNumber;
-        this.id = counter();
+        this.id = getCounter();
         counter++;
+    }
+
+    private int getCounter() {
+        return counter();
     }
 
     public static int counter() {
@@ -51,7 +55,7 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "ФИО сотрудника: "+ worker+". Зарплата сотрудника: "+salaryWorker+
-                ". Номер отдела: "+deptNumber+". Идентификационный номер: "+id + ".";
+        return "ФИО сотрудника: " + worker + ". Зарплата сотрудника: " + salaryWorker +
+                ". Номер отдела: " + deptNumber + ". Идентификационный номер: " + id + ".";
     }
 }
